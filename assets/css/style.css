@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+body,
+html {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+}
+
+:root {
+  --primary: #cee3e9;
+  --secondary: #52ffa8;
+  --blueGrayish: #4e5d73;
+  --darkBlueGrayish: #323a49;
+  --darkBlue: #1f2632;
+}
+
+body {
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+.quote {
+  background-color: var(--darkBlueGrayish);
+  border-radius: 10px;
+  padding: 24px 24px 64px 24px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+  text-align: center;
+  position: relative;
+}
+.quote .advice {
+  color: var(--secondary);
+  letter-spacing: 3.46px;
+  font-size: 11px;
+}
+
+.quote .quotes {
+  color: var(--primary);
+  letter-spacing: -0.26px;
+  font-size: 24px;
+  padding-top: 26px;
+  padding-bottom: 24px;
+}
+
+.random {
+  position: absolute;
+  left: 50%;
+  bottom: -14%;
+  transform: translate(-50%, -6%);
+  background-color: var(--secondary);
+  width: 64px;
+  height: 64px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 500ms ease-in-out;
+}
+.random:hover {
+  box-shadow: 0px 0px 40px #53ffaa;
+}
+
+@media (min-width: 1440px) {
+  .quote {
+    width: 540px;
+  }
+  .quote .advice {
+    font-size: 13px;
+  }
+  .quote .quotes {
+    font-size: 28px;
+  }
+}
